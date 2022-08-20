@@ -1,0 +1,36 @@
+html,
+body {
+  margin: 0;
+  overflow: hidden;
+  
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+canvas {
+  background-color: rgb(61, 61, 61);
+}
+
+.htmlwrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1px;
+  width: 100px;
+  height: 100px;
+}
+
+.rotate {
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(359deg); }
+}
